@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation Demo</title>
+    <style>
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        font-family: Arial, sans-serif;
+      }
+      .demo-box {
+        border: 2px solid #333;
+        padding: 15px;
+        margin: 10px 0;
+      }
+      .highlight {
+        background-color: yellow;
+      }
+      .success {
+        color: green;
+      }
+      .error {
+        color: red;
+      }
+      .hidden {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>DOM Manipulation Examples</h1>
+
+      <!-- Element Creation and Insertion -->
+      <div class="demo-box">
+        <h2>1. Element Creation and Insertion</h2>
+        <button onclick="createNewElement()">Create Element</button>
+        <button onclick="insertElement()">Insert Element</button>
+        <div id="creation-demo"></div>
+      </div>
+
+      <!-- Element Selection -->
+      <div class="demo-box">
+        <h2>2. Element Selection</h2>
+        <p id="select-by-id">Select me by ID</p>
+        <p class="select-by-class">Select me by class</p>
+        <p data-test="custom">Select me by data attribute</p>
+        <button onclick="demonstrateSelection()">Show Selection</button>
+        <div id="selection-result"></div>
+      </div>
+
+      <!-- Modifying Elements -->
+      <div class="demo-box">
+        <h2>3. Modifying Elements</h2>
+        <div id="modify-demo">Original Content</div>
+        <button onclick="modifyContent()">Modify Content</button>
+        <button onclick="modifyAttributes()">Modify Attributes</button>
+        <button onclick="modifyStyles()">Modify Styles</button>
+      </div>
+
+      <!-- Event Handling -->
+      <div class="demo-box">
+        <h2>4. Event Handling</h2>
+        <div id="event-demo">
+          <input type="text" id="event-input" placeholder="Type something..." />
+          <button id="event-button">Click Me</button>
+          <div id="event-result"></div>
+        </div>
+      </div>
+
+      <!-- DOM Traversal -->
+      <div class="demo-box">
+        <h2>5. DOM Traversal</h2>
+        <div id="traversal-demo">
+          <div class="parent">
+            Parent
+            <div class="child">Child 1</div>
+            <div class="child">Child 2</div>
+            <div class="child">Child 3</div>
+          </div>
+        </div>
+        <button onclick="traverseDOM()">Traverse DOM</button>
+        <div id="traversal-result"></div>
+      </div>
+    </div>
+
+<script src="./script.js" ></script>
+
+</body>
+</html>
