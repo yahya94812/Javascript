@@ -13,4 +13,3 @@
 * npx tsc // compile index.ts to index.js
 * node index.js
 * npx tsc --watch
-

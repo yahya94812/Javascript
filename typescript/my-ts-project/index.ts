@@ -18,7 +18,7 @@ let isActive: boolean = true;
 let colors: string[] = ["red", "green", "blue"];
 
 // 3. Interfaces
-// Interfaces define a structure for objects. In JavaScript
+// Interfaces define a structure for objects (or deeply types of object). In JavaScript
 interface Person {
     name: string;
     age: number;
