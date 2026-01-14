@@ -54,6 +54,8 @@ So this works:
 "dev": "nodemon index.js"
 Even though nodemon is not global.
 
+## modules resolution
+- When you run node index.js, Node resolves imports by first checking core modules, then local files, and finally searching for libraries in the nearest node_modules directory starting from the project folder and moving upward.
 
 ## Best Practices
 
