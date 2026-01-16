@@ -1,5 +1,3 @@
-export function greet(name) {
-  return `Hello, ${name}!`;
+export function greet() {
+  return `Hello, greet from package named "my-package-94812" function greet() `;
 }
-
-console.log(greet('Yahya'));
