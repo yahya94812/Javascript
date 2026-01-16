@@ -1,0 +1,2 @@
+- consider a js project like a one giant codebase but organized into the js files (modules) and connected by import, export to each other
+- the project have one starting js file that can import all necessary functions from all modules in some way
